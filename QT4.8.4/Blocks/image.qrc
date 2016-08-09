@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file alias="Mico">resources/MainwindowIcon.ico</file>
+        <file alias="Back">resources/back.jpg</file>
+        <file alias="ButtonUp">resources/button1.png</file>
+        <file alias="ButtonDown">resources/button2.png</file>
+        <file alias="Main">resources/Mainback.jpg</file>
+    </qresource>
+</RCC>
