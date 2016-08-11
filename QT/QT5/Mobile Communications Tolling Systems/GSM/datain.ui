@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DataIn</class>
+ <widget class="QDialog" name="DataIn">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>392</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>10</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>楷体</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>请选择需要导入的数据</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>90</y>
+     <width>171</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>MS信息</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>MSC信息</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>BSC信息</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>BTS信息</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>小区信息</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>小区频点表</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>天线信息</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>话务数据</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>邻区信息</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>路测信息</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="confirm">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>90</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>确认导入</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

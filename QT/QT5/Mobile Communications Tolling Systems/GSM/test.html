@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Echats</title>
+    <script src='echarts.js'></script>
+</head>
+<body>
+<object type='application/x-qt-plugin' height='1' width='1' id='qt'></object>
+<script></script>
+<div id='main' style="width:900px;height:340px;"></div>
+<script type="text/javascript">
+    var myChart = echarts.init(document.getElementById('main'));
+    option = {
+        title: {
+            text: '**小区话务数据统计折线图'
+        },
+        tooltip: {
+            trigger: 'axis'
+        },
+        legend: {
+            data: '小时级话务量'
+        },
+        xAxis: {
+            type: 'category',
+            boundaryGap: false,
+            name:'时间',
+            data:[]
+        },
+        yAxis: {
+            type: 'value',
+            name: ''
+        },
+        series: [
+            {
+                name: '小时级话务量',
+                type: 'line',
+                data:[]
+            }
+        ]
+    };
+    function toIntArray(data) {
+        for (var i = 0; i < data.length; ++i)
+            data[i] = Number(data[i]);
+        return data;
+    }
+    str = document.getElementById('qt').get_data();
+    var all_data = str.split(';');
+    option.title.text = all_data[0];
+    option.legend.data = all_data[1];
+    option.xAxis.name = all_data[2];
+    option.xAxis.data = all_data[3].split(',');
+    option.yAxis.name = all_data[4];
+    option.series[0].data = toIntArray(all_data[5].split(','));
+    option.series[0].name = all_data[1];
+    myChart.setOption(option);
+</script>
+</body>
+</html>
