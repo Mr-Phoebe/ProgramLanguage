@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">Resource Viewer</string>
+<string name="test_string">Android Says Hello!</string>
+<string name="opt_label">Optional Field:</string>
+<string name="opt_default">Can Type Here</string>
+<string name="mand_label">Mandatory Field:</string>
+<string name="mand_default">Must Type Here</string>
+</resources>

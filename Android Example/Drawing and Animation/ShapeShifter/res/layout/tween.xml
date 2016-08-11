@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/tween" />
+	<LinearLayout
+		android:id="@+id/ButtonRow"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<Button
+			android:id="@+id/ButtonAlpha"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Fade"></Button>
+		<Button
+			android:id="@+id/ButtonScale"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Grow"></Button>
+		<Button
+			android:id="@+id/ButtonTranslate"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Move"></Button>
+		<Button
+			android:id="@+id/ButtonRotate"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Spin"></Button>
+		<Button
+			android:id="@+id/ButtonAll"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="All"></Button>
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/LinearLayout01"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent"
+		android:orientation="horizontal"
+		android:layout_gravity="center_vertical|center_horizontal">
+		<ImageView
+			android:id="@+id/ImageViewForTweening"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:minHeight="90px" android:minWidth="90px" android:layout_margin="115px"></ImageView>
+	</LinearLayout>
+</LinearLayout>

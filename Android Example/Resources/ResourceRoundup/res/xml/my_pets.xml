@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!--
+		This is just a random XML file we can include as a resource and use in our application. 
+		We access this XML file in the code. Bit is our oldest bunny. She is 13 and litter box trained.
+	-->
+<pets>
+	<pet name="Bit" type="Bunny" />
+	<pet name="Nibble" type="Bunny" />
+	<pet name="Stack" type="Bunny" />
+	<pet name="Queue" type="Bunny" />
+	<pet name="Heap" type="Bunny" />
+	<pet name="Null" type="Bunny" />
+	<pet name="Nigiri" type="Fish" />
+	<pet name="Sashimi II" type="Fish" />
+	<pet name="Kiwi" type="Lovebird" />
+</pets>

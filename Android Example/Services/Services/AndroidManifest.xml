@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.androidbook.services"
+    android:versionCode="1"
+    android:versionName="1.0.0">
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:debuggable="true">
+        <activity
+            android:name=".Services"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN" />
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ServiceControl" />
+        <service
+            android:enabled="true"
+            android:name="GPXService">
+            <intent-filter>
+                <action
+                    android:name="com.androidbook.GPXService.SERVICE" />
+                <action
+                    android:name="com.androidbook.services.IRemoteInterface" />
+            </intent-filter>
+        </service>
+    </application>
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-sdk
+        android:minSdkVersion="3"></uses-sdk>
+</manifest>

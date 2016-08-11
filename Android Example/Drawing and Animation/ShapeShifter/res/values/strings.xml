@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string
+		name="app_name">ShapeShifter</string>
+	<string
+		name="tween">Tweened Animation Example</string>
+	<string
+		name="framebyframe">Frame-By-Frame Animation Example</string>
+	<string
+		name="shapes">Shapes Example</string>
+</resources>

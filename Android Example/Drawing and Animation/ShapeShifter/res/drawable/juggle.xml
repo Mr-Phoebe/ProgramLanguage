@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+	<!--
+		This is a simple XML Animation definition. This is not
+		used in the example but provided regardless, because
+		it's not a very well documented feature.
+	-->
+<set
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:shareInterpolator="false">
+	<animation-list
+		android:oneshot="false">
+		<item
+			android:drawable="@drawable/splash1"
+			android:duration="50" />
+		<item
+			android:drawable="@drawable/splash2"
+			android:duration="50" />
+		<item
+			android:drawable="@drawable/splash3"
+			android:duration="50" />
+		<item
+			android:drawable="@drawable/splash1"
+			android:duration="50" />
+		<item
+			android:drawable="@drawable/splash2"
+			android:duration="50" />
+		<item
+			android:drawable="@drawable/splash3"
+			android:duration="50" />
+		<item
+			android:drawable="@drawable/splash1"
+			android:duration="50" />
+		<item
+			android:drawable="@drawable/splash2"
+			android:duration="50" />
+		<item
+			android:drawable="@drawable/splash3"
+			android:duration="50" />
+	</animation-list>
+</set>

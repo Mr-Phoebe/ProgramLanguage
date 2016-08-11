@@ -1,0 +1,34 @@
+	<!--
+		This is a simple menu definition file. 
+		We use this file to inflate a context menu in the code.
+		
+		We set the Title attributes (the menu labels) using strings and string references.
+		We set the order of the menu items
+	-->
+<menu
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+		android:id="@+id/absolute_menu_item" 
+		android:title="Absolute Layout"
+		android:orderInCategory="1"></item>
+	<item
+		android:id="@+id/frame_menu_item"
+		android:title="Frame Layout"
+		android:orderInCategory="4"></item>
+	<item
+		android:id="@+id/linear_menu_item"
+		android:title="Linear Layout"
+		android:orderInCategory="2"></item>
+	<item
+		android:id="@+id/table_menu_item"
+		android:title="Table Layout"
+		android:orderInCategory="3"></item>
+	<item
+		android:id="@+id/relative_menu_item"
+		android:title="Relative Layout"
+		android:orderInCategory="5"></item>
+			<item
+		android:id="@+id/multi_menu_item"
+		android:title="Multiple Layouts"
+		android:orderInCategory="6"></item>
+</menu>

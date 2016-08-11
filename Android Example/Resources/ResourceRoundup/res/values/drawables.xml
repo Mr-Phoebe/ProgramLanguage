@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is a simple XML Resource definition file for very simple drawables. -->
+<resources>
+	<drawable name="redDrawable">#F00</drawable>
+</resources>

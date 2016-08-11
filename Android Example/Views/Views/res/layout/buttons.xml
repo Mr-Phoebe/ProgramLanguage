@@ -1,0 +1,112 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Sample Buttons" />
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/basic_buttons">
+<Button
+	android:id="@+id/basic_button"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Basic Button" />
+<ImageButton
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:id="@+id/image_button"
+	android:src="@drawable/droid"></ImageButton>
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+<ToggleButton
+	android:id="@+id/toggle_button"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Toggle"
+	android:textOff="Disabled"
+	android:textOn="Enabled" />
+		<TextView
+			android:id="@+id/text_feature"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:gravity="center_vertical"
+			android:text="Toggle me" />
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+<CheckBox
+	android:id="@+id/checkbox"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Check me?"/>
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+<RadioGroup
+	android:id="@+id/RadioGroup01"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+	<RadioButton
+		android:id="@+id/RadioButton01"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Option 1"></RadioButton>
+	<RadioButton
+		android:id="@+id/RadioButton02"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Option 2"></RadioButton>
+	<RadioButton
+		android:id="@+id/RadioButton03"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Option 3"></RadioButton>
+	<RadioButton
+		android:id="@+id/RadioButton04"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Option 4"></RadioButton>
+</RadioGroup>
+		<LinearLayout
+			android:id="@+id/LinearLayout01"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical"
+			android:gravity="center">
+			<TextView
+				android:id="@+id/TextView01"
+				android:text="Choose 1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"></TextView>
+			<Button
+				android:id="@+id/Button01"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Clear Choice"></Button>
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:gravity="bottom">
+		<Button
+			android:id="@+id/submit_demo"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Submit"
+			android:gravity="center" />
+	</LinearLayout>
+</LinearLayout>

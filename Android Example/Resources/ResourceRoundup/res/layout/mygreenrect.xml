@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!--
+		This is a simple layout file that contains an ImageView
+		widget, which will display the rectangle shape drawable
+		located at /res/drawable/green_rect.xml. The layout
+		element is aligned to the bottom using the gravity
+		attribute. 
+		
+		This layout file is INCLUDED into another layout file (main.xml).
+	-->
+<ImageView
+	android:id="@+id/ImageView01"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:src="@drawable/green_rect"
+	android:layout_width="150px"
+	android:layout_height="150px" android:layout_gravity="bottom|center_horizontal"></ImageView>

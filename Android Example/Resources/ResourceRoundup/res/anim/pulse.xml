@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- This is a simple XML definition for a Animation. 
+	Over the course of 5 seconds, scale from 100% to 25%
+	Over the next 5 seconds, scale back. -->
+<set
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:shareInterpolator="false">
+	<set>
+		<scale
+			android:duration="5000" 
+			android:pivotX="50%" 
+			android:pivotY="50%"
+			android:fromXScale="1.0"  
+			android:fromYScale="1.0"  
+			android:toXScale=".25"
+			android:toYScale=".25"
+ />
+ 		<scale
+			android:startOffset="5000" 
+		    android:duration="5000" 
+			android:pivotX="50%" 
+			android:pivotY="50%"
+			android:fromXScale="1.0"  
+			android:fromYScale="1.0"  
+			android:toXScale="4.0"
+			android:toYScale="4.0"
+ />
+	</set>
+</set>

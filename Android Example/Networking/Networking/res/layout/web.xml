@@ -1,0 +1,56 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        android:id="@+id/title"
+        android:text="MicroBrowser"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_alignParentTop="true"
+/>
+    <LinearLayout
+        android:id="@+id/web_info"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        >
+        <ImageSwitcher
+            android:id="@+id/favicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextSwitcher
+            android:id="@+id/pagetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/entry"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <EditText
+            android:id="@+id/url"
+            android:hint="Enter new url..."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:maxWidth="270px"/>
+        <Button
+            android:id="@+id/go_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="40px"
+            android:text="Go!"/>
+    </LinearLayout>
+        <WebView
+        android:id="@+id/web_holder"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent" 
+        android:layout_above="@id/entry"
+        android:layout_below="@id/web_info" />
+</RelativeLayout>

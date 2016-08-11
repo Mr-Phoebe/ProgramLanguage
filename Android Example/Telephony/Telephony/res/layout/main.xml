@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter phone number:" />
+    <EditText
+        android:id="@+id/number_entry"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone number" />
+    <Button
+        android:id="@+id/call_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call" />
+    <EditText
+        android:id="@+id/short_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Keep it short" />
+    <Button
+        android:id="@+id/send_sms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send" />
+    <TextView
+        android:id="@+id/received_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:text="Incoming messages will draw here..." />
+</LinearLayout>

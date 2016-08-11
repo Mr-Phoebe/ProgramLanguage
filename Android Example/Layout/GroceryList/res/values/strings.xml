@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, grocerylist</string>
+    <string name="app_name">Grocery List</string>
+<string-array name="menuStuff">
+<item>Milk</item>
+<item>Eggs</item>
+<item>Flour</item>
+</string-array>
+</resources>

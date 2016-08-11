@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Audio Record" />
+    <TextView
+        android:id="@+id/TextViewExplain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This example will record a video file called video.mp4."
+        android:textColor="#f0f"></TextView>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Record"
+        android:id="@+id/record" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop Record"
+        android:id="@+id/stop"
+        android:visibility="gone" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:visibility="gone"
+        android:id="@+id/play" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:visibility="gone"
+        android:id="@+id/stop_playback" />
+            <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frame" />
+</LinearLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<LinearLayout
+			android:id="@+id/LinearLayout01"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_width="fill_parent">
+			<TextView
+				android:id="@+id/Title"
+				android:text="-Activity Name-"
+				android:textColor="#00f"
+				android:textSize="8pt"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:shadowColor="#00f"
+				android:shadowDx="0"
+				android:shadowDy="0"
+				android:shadowRadius="10" />
+			<Button
+				android:id="@+id/ButtonGo"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Change Activities"
+				android:textColor="#00f"
+				android:textSize="5pt"></Button>
+		</LinearLayout>
+		<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Enter a preference name" />
+		<EditText
+			android:id="@+id/EditTextPrefName"
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"></EditText>
+		<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Enter a preference value" />
+		<EditText
+			android:id="@+id/EditTextPrefValue"
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"></EditText>
+		<TableLayout
+			android:id="@+id/TableLayout01"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:stretchColumns="*">
+			<TableRow
+				android:id="@+id/TableRow01"
+				android:layout_height="wrap_content"
+				android:padding="5px"
+				android:layout_width="wrap_content">
+				<Button
+					android:id="@+id/ButtonAddSharedPref"
+					android:text="Add/Edit Shared Pref"
+					android:background="#f00"
+					android:padding="5px"
+					android:textSize="5pt" android:layout_column="0"></Button>
+				<Button
+					android:text="Clear Shared Pref By Name"
+					android:id="@+id/ButtonClearSharedPrefByName"
+					android:padding="5px"
+					android:background="#f00"
+					android:textSize="5pt" android:layout_column="2"></Button>
+			</TableRow>
+			<TableRow
+				android:id="@+id/TableRow01"
+				android:layout_height="wrap_content"
+				android:padding="5px"
+				android:layout_width="wrap_content">
+				<Button
+					android:id="@+id/ButtonAddActivityPref"
+					android:text="Add/Edit Activity Pref"
+					android:background="#0f0"
+					android:padding="5px"
+					android:textSize="5pt" android:layout_column="0"></Button>
+				<Button
+					android:text="Clear Act Pref By Name"
+					android:id="@+id/ButtonClearActPrefByName"
+					android:background="#0f0"
+					android:padding="5px"
+					android:textSize="5pt" android:layout_column="2"></Button>
+			</TableRow>
+			<TableRow
+				android:id="@+id/TableRow01"
+				android:layout_height="wrap_content"
+				android:padding="5px"
+				android:layout_width="wrap_content">
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="*SHARED PREFS*"
+					android:layout_width="wrap_content" 
+					android:layout_column="0"/>
+				<Button
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/ButtonClearShared"
+					android:text="Clear All Shared Prefs"
+					android:padding="5px"
+					android:background="#f00"
+					android:textSize="5pt" android:layout_column="2"></Button>
+			</TableRow>
+			<TableRow
+				android:id="@+id/TableRow01"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="5px">
+				<TextView
+					android:id="@+id/CurrentPrefs"
+					android:text="-Show Prefs Here-"
+					android:textColor="#f00"
+					android:layout_height="wrap_content"
+					android:textSize="6pt"
+					android:layout_span="3"
+					android:layout_width="wrap_content" />
+			</TableRow>
+			<TableRow
+				android:id="@+id/TableRow01"
+				android:layout_height="wrap_content"
+				android:padding="5px"
+				android:layout_width="wrap_content">
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="*ACTIVITY PREFS*"
+					android:layout_width="wrap_content"
+					android:layout_column="0" />
+				<Button
+					android:id="@+id/ButtonClearAct"
+					android:text="Clear All Activity Prefs"
+					android:background="#0f0"
+					android:textSize="5pt" android:layout_column="2" android:padding="5px"></Button>
+			</TableRow>
+			<TableRow
+				android:id="@+id/TableRow01"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="5px">
+				<TextView
+					android:id="@+id/CurrentActivityPrefs"
+					android:text="-Show Prefs Here-"
+					android:textColor="#0f0"
+					android:textSize="6pt"
+					android:layout_width="wrap_content" 
+					android:layout_span="3" />
+			</TableRow>
+		</TableLayout>
+	</LinearLayout>
+</ScrollView>

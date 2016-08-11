@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >	   
+    <TextView 
+    	style="@style/padded_small"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content"
+    	android:text="Small Padded"
+    	/>
+    <TextView 
+    	style="@style/padded_xlarge"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content"
+    	android:text="Big!"
+    	/>
+    <TextView 
+    	style="@style/padded_normal"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content"
+    	android:text="Normal w/parent color"
+    	/>    	    	
+    <TextView 
+    	style="@style/padded_italics"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content"
+    	android:text="Italic w/parent color"
+    	/>      	
+    	    <TextView 
+    	style="@style/glow"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content"
+    	android:text="Glow!"
+    	/>      
+    	    	    <TextView 
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content"
+    	android:text="normal"
+    	/> 
+    	
+</LinearLayout>

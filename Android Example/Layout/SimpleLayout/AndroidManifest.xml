@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.androidbook.simplelayout"
+	android:versionCode="1"
+	android:versionName="1.0.0">
+	<application
+		android:icon="@drawable/icon"
+		android:label="@string/app_name"
+		android:debuggable="true">
+		<activity
+		android:name=".simplelayout"
+		android:label="@string/app_name">
+		<intent-filter>
+			<action
+				android:name="android.intent.action.MAIN" />
+			<category
+				android:name="android.intent.category.LAUNCHER" />
+		</intent-filter>
+	</activity>
+		<activity
+			android:name="table_layout"></activity>
+		<activity
+			android:name="relative_layout"></activity>
+		<activity
+			android:name="linear_layout"></activity>
+		<activity
+			android:name="frame_layout"></activity>
+		<activity
+			android:name="absolute_layout"></activity>
+		<activity
+			android:name="multiple_layout"></activity>
+	</application>
+	        <uses-sdk
+        android:minSdkVersion="3"></uses-sdk>
+</manifest>

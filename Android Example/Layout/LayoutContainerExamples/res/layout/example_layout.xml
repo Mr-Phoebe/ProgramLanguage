@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/two_texts"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView
+	android:id="@+id/TextView1"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Hi There!"
+    />
+    <TextView  
+	android:id="@+id/TextView2"
+        android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:textSize="60px"
+    android:text="I'm second. I need to wrap."
+    />
+</LinearLayout>

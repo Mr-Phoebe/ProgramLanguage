@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Enter Data about your Pet"
+		android:textSize="11pt"
+		android:textColor="#0f0" />
+	<TableLayout
+		android:id="@+id/TableLayout01"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:stretchColumns="1">
+		<TableRow
+			android:id="@+id/TableRow01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<TextView
+				android:id="@+id/TextView01"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Pet Name:"></TextView>
+			<EditText
+				android:id="@+id/EditTextName"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"></EditText>
+		</TableRow>
+		<TableRow
+			android:id="@+id/TableRow02"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<TextView
+				android:id="@+id/TextView01"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Pet Species:"></TextView>
+			<AutoCompleteTextView
+				android:id="@+id/EditTextSpecies"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"></AutoCompleteTextView>
+		</TableRow>
+	</TableLayout>
+	<Button
+		android:layout_height="wrap_content"
+		android:text="Save"
+		android:layout_width="fill_parent"
+		android:id="@+id/ButtonSave"></Button>
+	<Button
+		android:layout_height="wrap_content"
+		android:text="Show All Pets"
+		android:layout_width="fill_parent"
+		android:id="@+id/ButtonShowPets"
+		android:textColor="#0f0"
+		android:textSize="12pt"
+		android:capitalize="characters"></Button>
+</LinearLayout>

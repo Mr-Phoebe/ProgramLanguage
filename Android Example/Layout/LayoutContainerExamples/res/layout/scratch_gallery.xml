@@ -1,0 +1,7 @@
+<Gallery
+    android:id="@+id/scratch_adapter_view"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:spacing="12px"
+    android:unselectedAlpha=".50"></Gallery>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is a simple XML Resource definition file for some string arrays. The first array uses strings directly, the other uses references to resource strings in the strings.xml file -->
+<resources>
+	<string-array name="flavors">
+        <item>Vanilla</item>
+        <item>Chocolate</item>
+        <item>Strawberry</item>
+    </string-array> 
+	<string-array name="chipmunks">
+        <item>@string/nameAlvin</item>
+        <item>@string/nameSimon</item>
+        <item>@string/nameTheodore</item>
+    </string-array> 
+</resources>

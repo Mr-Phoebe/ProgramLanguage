@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<style name="padded_small">
+	<item name="android:padding">2px</item>
+	<item name="android:textSize">8px</item>
+</style>
+
+
+<style name="padded_xlarge">
+	<item name="android:padding">10px</item>
+	<item name="android:textSize">100px</item>
+</style>
+
+
+<style name="red_padded">
+	<item name="android:padding">3px</item>
+	<item name="android:textColor">#F00</item>
+</style>
+
+<style name="padded_normal" parent="red_padded">
+	<item name="android:textSize">12px</item>
+</style>
+
+<style name="padded_italics" parent="red_padded">
+	
+	<item name="android:textSize">14px</item>
+	<item name="android:textStyle">italic</item>
+</style>
+
+<style name="glow" parent="padded_xlarge">
+	<item name="android:shadowColor">#0F0</item>
+	<item name="android:shadowDx">0</item>
+	<item name="android:shadowDy">0</item>
+	<item name="android:shadowRadius">10</item>
+</style>
+
+
+<style name="ThemeGlow" parent="padded_small">
+	<item name="android:shadowColor">#0F0</item>
+	<item name="android:shadowDx">0</item>
+	<item name="android:shadowDy">0</item>
+	<item name="android:shadowRadius">2</item>
+</style>
+
+<style name="right">
+	<item name="android:gravity">right</item>
+</style>
+	
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is a simple XML Resource definition file for a style. -->
+<resources>
+	<style name="myAppIsStyling">
+        <item name="android:textColor">#F00</item>
+        <item name="android:textSize">16pt</item>   
+        <item name="android:textStyle">bold</item>      
+	</style>
+</resources>

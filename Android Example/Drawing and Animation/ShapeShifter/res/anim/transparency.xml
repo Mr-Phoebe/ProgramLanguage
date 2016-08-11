@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+	<!--
+		This is a simple XML definition for a Animation. Over
+		the course of 5 seconds, fade in from 0 to 100%
+	-->
+<set
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:shareInterpolator="false">
+		<alpha
+			android:fromAlpha="0.0"
+			android:toAlpha="1.0"
+			android:startOffset="0"
+			android:duration="5000">
+		</alpha>
+	</set>

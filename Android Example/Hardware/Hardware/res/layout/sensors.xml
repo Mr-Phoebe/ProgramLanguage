@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+          <ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Sensors Info" />
+ 
+    <RadioGroup
+        android:id="@+id/sensor_group"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+>
+        <RadioButton
+            android:id="@+id/sensor_accel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accelerometer" />
+        <RadioButton
+            android:id="@+id/sensor_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temperature" />
+        <RadioButton
+            android:id="@+id/sensor_light"
+            android:layout_height="wrap_content"
+            android:text="Light"
+            android:layout_width="wrap_content" />
+        <RadioButton
+            android:id="@+id/sensor_mag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Magnetic" />
+        <RadioButton
+            android:id="@+id/sensor_orient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Orientation" />
+        <RadioButton
+            android:id="@+id/sensor_prox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proximity" />
+    </RadioGroup>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/start_sensor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Sensor" />
+        <Button
+            android:id="@+id/stop_sensor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop Sensor"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    
+    </LinearLayout>
+            </ScrollView>
+    <LinearLayout
+            android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+    <TextView
+        android:id="@+id/status"
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="... data will go here ..." 
+        android:layout_gravity="right" android:gravity="right"/>
+</LinearLayout>
+</RelativeLayout>

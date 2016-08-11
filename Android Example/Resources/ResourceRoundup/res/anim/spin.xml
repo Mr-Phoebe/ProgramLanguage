@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- This is a simple XML definition for a Animation. 
+	Over the course of 10 seconds, rotate counterclockwise 4 times, (spin from the center) -->
+	<set
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:shareInterpolator="false">
+	<set>
+		<rotate
+			android:fromDegrees="0"
+			android:toDegrees="-1440"
+			android:pivotX="50%"
+			android:pivotY="50%"
+			android:duration="10000" />
+	</set>
+</set>

@@ -1,0 +1,31 @@
+	<!--
+		This is a simple menu definition file. 
+		We use this file to inflate a context menu in the code.
+		
+		We set the Title attributes (the menu labels) using strings and string references.
+		We set the order of the menu items
+	-->
+<menu
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+		android:id="@+id/bitmap_menu_item" 
+		android:title="Bitmap"
+		android:orderInCategory="1"></item>
+	<item
+		android:id="@+id/text_menu_item"
+		android:title="Text"
+		android:orderInCategory="2"></item>
+
+	<item
+		android:id="@+id/gradient_menu_item"
+		android:title="Gradients"
+		android:orderInCategory="5"></item>
+	<item
+		android:id="@+id/shape_menu_item"
+		android:title="Shapes"
+		android:orderInCategory="4"></item>
+			<item
+		android:id="@+id/font_menu_item"
+		android:title="Chess Font"
+		android:orderInCategory="3"></item>
+</menu>

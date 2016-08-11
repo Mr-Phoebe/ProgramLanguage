@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string
+        name="hello">Hello World, ViewsMenu</string>
+    <string
+        name="app_name">UI Elements</string>
+    <string
+        name="spin_prompt">Choose a color</string>
+    <string
+        name="autolink_test">This is a test. My blog is at
+        http://androidbook.blogspot.com\nEmail me at
+        test@gmail.com\nCall me at (800) 555-1212\nFind me at my favorite coffee joint 
+        1456 White Mountain Hwy, North Conway, NH 03860
+</string>
+    <array
+        name="colors">
+        <item>red</item>
+        <item>blue</item>
+        <item>green</item>
+        <item>yellow</item>
+        <item>magenta</item>
+        <item>cyan</item>
+        <item>orange</item>
+        <item>black</item>
+    </array>
+    <array
+        name="numbers">
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <string
+        name="ell_test">Word supercallafragalisticexpealadocious.</string>
+    <string
+        name="dash">---</string>
+</resources>

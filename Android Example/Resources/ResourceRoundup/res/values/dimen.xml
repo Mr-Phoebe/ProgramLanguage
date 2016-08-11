@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is a simple XML Resource definition file for dimensions. -->
+<resources>
+	<dimen name="textPointSize">18pt</dimen>
+</resources>

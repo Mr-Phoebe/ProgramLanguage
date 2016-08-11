@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<RelativeLayout
+		android:id="@+id/RelativeLayout01"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<TextView
+			android:id="@+id/TextViewTitle"
+			android:layout_height="wrap_content"
+			android:text="This is the log file. "
+			android:textSize="12pt"
+			android:layout_width="wrap_content" />
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toLeftOf="@id/TextViewTitle"
+			android:layout_alignParentRight="true"
+			android:id="@+id/ButtonChat"
+			android:text="Go Chat"></Button>
+		<TextView
+			android:id="@+id/TextViewCurrentLogFile"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="-Show Log Here-"
+			android:textColor="#f00"
+			android:layout_below="@id/ButtonChat"></TextView>
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Delete Log"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true"
+			android:id="@+id/ButtonClearLog"></Button>
+	</RelativeLayout>
+</LinearLayout>

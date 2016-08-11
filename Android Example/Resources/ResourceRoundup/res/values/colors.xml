@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is a simple XML Resource definition file for colors. -->
+<resources>
+    <color name="prettyTextColor">#ff0000</color>
+    <color name="prettyBackgroundColor">#00ff00</color>    
+</resources>

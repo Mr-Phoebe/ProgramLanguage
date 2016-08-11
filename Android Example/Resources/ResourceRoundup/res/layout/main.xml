@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!-- Container Widget to put some stuff in -->
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<!-- Text Label Widget to show the hello text string, setting the dimension set in dimen.xml -->
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/hello" android:textSize="@dimen/textPointSize"/>
+	<!--
+		Image Widget we will set the image source to the Flag in
+		code in the usessomeresources.java file (Note, we
+		animate this in the code)
+	-->
+	<ImageView
+		android:id="@+id/ImageView01"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"></ImageView>
+	<!--
+		Image Widget we will set the image source to our red
+		oval drawable we defined in /res/drawable/red_oval.xml.
+		Since these drawables are scalable, we set the size of
+		the widget (Note, we animate this in the code
+	-->
+	<ImageView
+		android:id="@+id/ImageView02"
+		android:layout_gravity="center"
+		android:layout_width="200px"
+		android:layout_height="200px"
+		android:src="@drawable/red_oval"></ImageView>
+	<!--
+		Showing how to include a layout from another file. This
+		puts another ImageView with a green rectangle below the
+		other ImageViews. This imageview is defined in
+		/res/layout/mygreenrect.xml
+	-->
+	<include
+		layout="@layout/mygreenrect" />
+</LinearLayout>

@@ -1,0 +1,40 @@
+<ScrollView
+    android:id="@+id/events_screen"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/LinearLayout02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last event:" />
+            <EditText
+                android:id="@+id/last_event_text"
+                android:layout_width="wrap_content"
+                android:enabled="false"
+                android:layout_height="wrap_content"
+                android:hint="Perform an event..." />
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Long press me"
+            android:id="@+id/long_press"
+            android:longClickable="true" />
+        <EditText
+            android:id="@+id/text_focus_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Focus me" />
+    </LinearLayout>
+</ScrollView>

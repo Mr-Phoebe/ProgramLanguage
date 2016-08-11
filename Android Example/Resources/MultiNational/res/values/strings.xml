@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Default and shared  strings  -->
+<resources>
+    <string name="hello">Yo! (Works in any language, right?)</string>
+    <string name="app_name">MultiNational</string>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/shapes" />
+	<LinearLayout
+		android:id="@+id/ButtonRow"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<Button
+			android:id="@+id/ButtonLine"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Line"></Button>
+		<Button
+			android:id="@+id/ButtonOval"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Oval"></Button>
+		<Button
+			android:id="@+id/ButtonRect"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Rectangle"></Button>
+		<Button
+			android:id="@+id/ButtonPath"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Path"></Button>
+		<Button
+			android:id="@+id/ButtonArc"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Arc"></Button>
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/ButtonRow"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+					<Button
+			android:id="@+id/ButtonRoundRect"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Rnd Rect"></Button>
+					<Button
+			android:id="@+id/ButtonRoundRect2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Rnd Rect 2"></Button>
+					<Button
+			android:id="@+id/ButtonPath2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Path 2"></Button>
+					<Button
+			android:id="@+id/ButtonPath3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Path 3"></Button>
+
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/LinearLayout01"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent"
+		android:orientation="horizontal"
+		android:layout_gravity="center_vertical|center_horizontal">
+		<ImageView
+			android:id="@+id/ImageViewForShape"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:minHeight="90px"
+			android:minWidth="90px"
+			android:layout_margin="115px"></ImageView>
+	</LinearLayout>
+</LinearLayout>

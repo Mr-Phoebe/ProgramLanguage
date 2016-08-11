@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This is a simple XML definition for a Drawable of subclass ShapeDrawable -> A red oval. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <solid android:color="#f00"/>
+</shape>

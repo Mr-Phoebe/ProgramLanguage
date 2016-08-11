@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array
+		name="main_menu">
+		<item>@string/play_new_option
+		</item>
+		<item>@string/load_existing_option
+		</item>
+		<item>@string/scores_option</item>
+		<item>@string/help_option</item>
+		<item>@string/credits_option
+		</item>
+		<item>@string/quit_option</item>
+	</string-array>
+</resources>

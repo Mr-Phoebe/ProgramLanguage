@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Here you can chat with yourself and your conversation will be logged to a file. " android:textSize="12pt"/>
+	<RelativeLayout
+		android:id="@+id/RelativeLayout01"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<EditText
+			android:layout_height="wrap_content"
+			android:hint="Chat Text Here, Then Hit Send"
+			android:id="@+id/EditTextChat" android:layout_width="fill_parent" android:lines="8"></EditText>
+		<Button
+			android:layout_height="wrap_content"
+			android:text="Send"
+			android:layout_alignParentRight="true" android:id="@+id/ButtonSend" android:layout_below="@id/EditTextChat" android:layout_width="fill_parent"></Button>
+		
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true" android:id="@+id/ButtonSeeLog" android:text="Review Log File" android:layout_width="fill_parent" android:textStyle="italic" android:textColor="#f00"></Button>
+	</RelativeLayout>
+</LinearLayout>

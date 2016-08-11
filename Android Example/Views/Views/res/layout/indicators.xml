@@ -1,0 +1,79 @@
+
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/ScrollView01"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TextView
+			android:id="@+id/TextView01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Indicators" />
+		<ProgressBar
+			android:id="@+id/progress_bar"
+			style="?android:attr/progressBarStyleHorizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:max="100" />
+		<ProgressBar
+			android:id="@+id/progress_bar2"
+			style="?android:attr/progressBarStyleHorizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:max="100" />
+		<ProgressBar
+			android:id="@+id/progress_bar4"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+		<ProgressBar
+			android:id="@+id/progress_bar3"
+			style="?android:attr/progressBarStyleLarge"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+		<LinearLayout
+			android:id="@+id/LinearLayout01"
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:orientation="horizontal">
+			<SeekBar
+				android:id="@+id/seekbar1"
+				android:layout_height="wrap_content"
+				android:layout_width="240px"
+				android:max="512"
+				android:thumb="@drawable/droid" />
+			<TextView
+				android:id="@+id/seek_text"
+				android:text="Slider"
+				android:layout_gravity="center"
+				android:layout_height="fill_parent"
+				android:layout_width="fill_parent"></TextView>
+		</LinearLayout>
+		<RatingBar
+			android:id="@+id/ratebar1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:numStars="4"
+			android:stepSize="0.25" android:focusable="true" android:focusableInTouchMode="true" android:soundEffectsEnabled="true"></RatingBar>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/rating_text"></TextView>
+		<Chronometer
+			android:id="@+id/Chronometer01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:format="Timer: %s" android:focusable="false" android:focusableInTouchMode="false"></Chronometer>
+		<DigitalClock
+			android:id="@+id/DigitalClock01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></DigitalClock>
+		<AnalogClock
+			android:id="@+id/AnalogClock01"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></AnalogClock>
+	</LinearLayout>
+</ScrollView>

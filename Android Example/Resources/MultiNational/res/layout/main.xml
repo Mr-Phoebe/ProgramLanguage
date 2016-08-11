@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 	Where all this project's magic takes place. 
+		First, we have a LinearLayout, set to the size of the screen:
+			The layout has a background image called @drawable/Background.
+			Android chooses the appropriate drawable background image at runtime based on two factors:
+				Language (en, fr, or all others) and Screen orientation (port, land)
+		Second, we put a TextView in the LinearLayout, also set to fill the size of the LinearLayout (screen size):
+			The text label is set to @string/hello. 
+			Android chooses the appropriate version of the string at runtime based upon:
+				Language: (en, fr, or all others)	
+			The color is set from a shared color resource file
+			Gravity centers the text.
+			The text size is set with a fixed value. You can do this, but why not use a dimension resource instead?
+ -->
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/background">
+	<TextView
+		android:text="@string/hello"
+		android:textSize="24pt"
+		android:gravity="center"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent"
+		android:textColor="@color/text_color" />
+</LinearLayout>

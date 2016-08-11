@@ -1,0 +1,51 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:orientation="vertical"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+        <EditText
+            android:id="@+id/EditText01"
+            android:layout_height="wrap_content"
+            android:hint="type here"
+            android:lines="4"
+            android:layout_width="fill_parent" />
+        <EditText
+            android:id="@+id/EditText02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="preset value"
+            android:editable="false"></EditText>
+        <AutoCompleteTextView
+            android:id="@+id/AutoCompleteTextView01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:completionHint="Pick a color or type your own"
+            android:completionThreshold="1" />
+        <MultiAutoCompleteTextView
+            android:id="@+id/MultiAutoCompleteTextView01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:completionThreshold="1"
+            android:completionHint="Pick a color or type your own" />
+        <EditText
+            android:id="@+id/input_filtered"
+            android:layout_height="wrap_content"
+            android:hint="type here"
+            android:layout_width="fill_parent" />
+        <Spinner
+            android:id="@+id/Spinner01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/colors"
+            android:prompt="@string/spin_prompt" />
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+    </LinearLayout>
+</ScrollView>

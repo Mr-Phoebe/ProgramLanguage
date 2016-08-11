@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android=
+        "http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/form_background_color">
+    <TextView
+        android:id="@+id/TextView01"
+        style="@style/mandatory_text_field_style"
+        android:layout_height="wrap_content"
+        android:text="@string/mand_label"
+        android:layout_width="wrap_content" />
+    <EditText
+        android:id="@+id/EditText01"
+        style="@style/mandatory_text_field_style"
+        android:layout_height="wrap_content"
+        android:text="@string/mand_default"
+        android:layout_width="fill_parent"
+        android:singleLine="true" />
+    <TextView
+        android:id="@+id/TextView02"
+        style="@style/optional_text_field_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/opt_label" />
+    <EditText
+        android:id="@+id/EditText02"
+        style="@style/optional_text_field_style"
+        android:layout_height="wrap_content"
+        android:text="@string/opt_default"
+        android:singleLine="true"
+        android:layout_width="fill_parent" />
+    <TextView
+        android:id="@+id/TextView03"
+        style="@style/optional_text_field_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/opt_label" />
+    <EditText
+        android:id="@+id/EditText03"
+        style="@style/optional_text_field_style"
+        android:layout_height="wrap_content"
+        android:text="@string/opt_default"
+        android:singleLine="true"
+        android:layout_width="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Just the English strings (you can put the application name in here, too, if you like). -->
+<resources> 
+	<string name="hello">Hello in British English! (Hey, that's not *our* capitol!)</string>
+</resources>

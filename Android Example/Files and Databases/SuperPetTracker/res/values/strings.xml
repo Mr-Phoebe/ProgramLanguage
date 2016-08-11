@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Super Pet Tracker</string>
+     <string name="pet_name">Pet Name</string>
+<string name="pet_type">Pet Species</string>
+<string name="pet_actions">Actions</string>
+</resources>

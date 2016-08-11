@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/RelativeLayoutHeader"
+	android:layout_height="wrap_content"  android:layout_width="fill_parent">
+		<TextView
+		android:id="@+id/TextView_PetName"
+		android:layout_width="wrap_content"
+		android:layout_height="?android:attr/listPreferredItemHeight" android:layout_alignParentLeft="true"></TextView>
+	<TextView
+		android:id="@+id/TextView_PetType"
+		android:layout_width="wrap_content"
+		android:layout_height="?android:attr/listPreferredItemHeight" android:layout_alignParentRight="true"></TextView>
+</RelativeLayout>

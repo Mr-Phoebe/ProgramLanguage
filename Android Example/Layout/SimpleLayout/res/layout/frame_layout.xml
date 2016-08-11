@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	android:id="@+id/FrameLayout01"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_gravity="center">
+	<ImageView
+		android:id="@+id/ImageView01"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/green_rect"
+		android:minHeight="200px"
+		android:minWidth="200px"></ImageView>
+	<ImageView
+		android:id="@+id/ImageView02"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/red_oval"
+		android:minHeight="100px"
+		android:minWidth="100px"
+		android:layout_gravity="center"></ImageView>
+</FrameLayout>

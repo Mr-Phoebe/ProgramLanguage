@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:padding="10px"
+>
+	<TextView
+		android:id="@+id/latitude"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="14px" />
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text=", "
+		android:textSize="14px" />
+	<TextView
+		android:id="@+id/longitude"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="14px" />
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text=", "
+		android:textSize="14px" />
+	<TextView
+		android:id="@+id/elevation"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="14px" />
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text=" @ "
+		android:textSize="16px"
+		android:visibility="visible" />
+	<TextView
+		android:id="@+id/timestamp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="10px"
+		android:visibility="visible" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Color settings used in the /res/layout/main.xml  -->
+<resources>    
+	<color name="background_color">#6699CC</color>
+	<color name="text_color">#f0f</color>
+</resources>

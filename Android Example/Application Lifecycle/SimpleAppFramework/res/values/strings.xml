@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string
+		name="hello">Hello World, SimpleAppFramework</string>
+	<string
+		name="app_name">Simple Application Framework</string>
+	<string
+		name="play_new_option">Play New Game</string>
+	<string
+		name="scores_option">Top Scores</string>
+	<string
+		name="help_option">Help</string>
+	<string
+		name="credits_option">Credits</string>
+	<string
+		name="load_existing_option">Load Existing Game</string>
+	<string
+		name="quit_option">Quit</string>
+
+				
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="horizontal" android:layout_gravity="center_vertical">
+	<ImageView
+		android:id="@+id/ImageView03"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/arrow" android:layout_gravity="center"></ImageView>
+	<ImageView
+		android:id="@+id/ImageView02"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/red_oval"
+		android:minWidth="40px" android:minHeight="400px" android:layout_gravity="center_vertical"></ImageView>
+	<ImageView
+		android:id="@+id/ImageView01"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/arrow2"
+		android:layout_gravity="top"></ImageView>
+			<ImageView
+		android:id="@+id/ImageView02"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:minWidth="40px"
+		android:minHeight="400px" android:src="@drawable/green_rect" android:layout_gravity="top"></ImageView>
+	<ImageView
+		android:id="@+id/ImageView01"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom" android:src="@drawable/arrow"></ImageView>
+			<ImageView
+		android:id="@+id/ImageView02"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/red_oval"
+		android:minWidth="40px"
+		android:minHeight="400px" android:layout_gravity="center_vertical"></ImageView>
+	<ImageView
+		android:id="@+id/ImageView01"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/arrow2"
+		></ImageView>
+					<ImageView
+		android:id="@+id/ImageView02"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:minWidth="40px"
+		android:minHeight="400px" android:src="@drawable/green_rect" android:layout_gravity="bottom"></ImageView>
+			<ImageView
+		android:id="@+id/ImageView03"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/arrow"
+		android:layout_gravity="center_vertical"></ImageView>
+</LinearLayout>
