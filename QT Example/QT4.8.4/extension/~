@@ -1,0 +1,104 @@
+//      whn6325689
+//		Mr.Phoebe
+//		http://blog.csdn.net/u013007900
+#include <algorithm>
+#include <iostream>
+#include <iomanip>
+#include <cstring>
+#include <climits>
+#include <complex>
+#include <fstream>
+#include <cassert>
+#include <cstdio>
+#include <bitset>
+#include <vector>
+#include <deque>
+#include <queue>
+#include <stack>
+#include <ctime>
+#include <set>
+#include <map>
+#include <cmath>
+#include <functional>
+#include <numeric>
+#pragma comment(linker, "/STACK:1024000000,1024000000")
+
+
+using namespace std;
+
+typedef long long ll;
+typedef long double ld;
+typedef pair<ll, ll> pll;
+typedef complex<ld> point;
+typedef pair<int, int> pii;
+typedef pair<pii, int> piii;
+typedef vector<int> vi;
+
+#define CLR(x,y) memset(x,y,sizeof(x))
+#define mp(x,y) make_pair(x,y)
+#define pb(x) push_back(x)
+#define lowbit(x) (x&(-x))
+#define MID(x,y) (x+((y-x)>>1))
+#define eps 1e-9
+#define PI acos(-1.0)
+#define INF 0x3f3f3f3f
+#define LLINF 1LL<<62
+
+template<class T>
+inline bool read(T &n)
+{
+    T x = 0, tmp = 1; char c = getchar();
+    while((c < '0' || c > '9') && c != '-' && c != EOF) c = getchar();
+    if(c == EOF) return false;
+    if(c == '-') c = getchar(), tmp = -1;
+    while(c >= '0' && c <= '9') x *= 10, x += (c - '0'),c = getchar();
+    n = x*tmp;
+    return true;
+}
+template <class T>
+inline void write(T n)
+{
+    if(n < 0)
+    {
+        putchar('-');
+        n = -n;
+    }
+    int len = 0,data[20];
+    while(n)
+    {
+        data[len++] = n%10;
+        n /= 10;
+    }
+    if(!len) data[len++] = 0;
+    while(len--) putchar(data[len]+48);
+}
+//-----------------------------------
+
+
+const int maxn=1000;
+
+int main()
+{
+	int i,c,m,n,j = 0;
+      double v,h[maxn];
+      while(scanf("%d%d",&m,&n)!=EOF )
+      {
+            for(i=0;i<m*n;i++)
+				scanf("%lf",&h[i]);
+            scanf("%lf",&v);
+         qsort(h,m*n,sizeof(h[0]),cmp); //快速排序，还可以用sort（h,h+m*n)；代替，不过前面要加
+                                         //   using namespace std;
+              i=0;
+            while(i<m*n-1)    
+            {
+                  if(v<(h[i+1]-h[i])*100*(i+1))break;  //以V作为临界条件，求出被淹没的格子
+                  v-=(h[i+1]-h[i])*100*(i+1);
+                  i++;
+            }
+            double per=100.0*(i+1)/(m*n);
+            double level=v/(100*(i+1))+h[i];
+            printf("Region %d\n",++j);
+            printf("Water level is %.2lf meters.\n",level);
+            printf("%.2lf percent of the region is under water.\n",per);
+      }
+}
