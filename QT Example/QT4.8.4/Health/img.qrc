@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file alias="frame">resources/frame.png</file>
+        <file alias="cai">resources/cai.png</file>
+        <file alias="cai2">resources/cai2.png</file>
+        <file alias="close">resources/close.png</file>
+        <file alias="close2">resources/close2.png</file>
+        <file alias="min">resources/min.png</file>
+        <file alias="min2">resources/min2.png</file>
+        <file alias="menu">qss/menu.qss</file>
+        <file alias="add">resources/add.png</file>
+        <file alias="female">resources/female.png</file>
+        <file alias="male">resources/male.png</file>
+        <file alias="mainpicture">resources/mainpicture.jpg</file>
+        <file alias="board">resources/board.png</file>
+        <file>resources/deleteusericon.png</file>
+        <file alias="icon">resources/icon.jpg</file>
+        <file alias="cover">resources/cover.jpg</file>
+        <file alias="back0">resources/background.png</file>
+    </qresource>
+</RCC>

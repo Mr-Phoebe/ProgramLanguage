@@ -1,0 +1,44 @@
+  QMenu {
+     background-color: #030406;  
+     border-width:0px;
+     margin: 2px;   
+ }
+ QMenu::item {
+     background-color: #1D2838;   
+     padding: 2px 25px 2px 25px;  
+     border-color:transparent;
+     color:#858E94;
+ }
+ QMenu::item:!enabled {  
+     background-color:  #1D2838;
+     padding: 2px 25px 2px 20px;
+     border-color:transparent;
+     color:#76746C;   
+ }
+ QMenu::item:selected {   
+     border-width:1px;
+     border-color: #516589;
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, 
+                                 stop: 0 #1E293A,
+                                 stop: 1.0 #2C547E);
+     color:#E6FFFF;
+ }
+ QMenu::icon:checked {
+     background: gray;
+     border: 1px inset gray;
+     position: absolute;
+     top: 1px;
+     right: 1px;
+     bottom: 1px;
+     left: 1px;
+ }
+ QMenu::separator {    
+     height: 1px;
+     background: #1D99A9;
+    
+    
+ }
+ QMenu::indicator {    
+     width: 13px;
+     height: 13px;
+ }
