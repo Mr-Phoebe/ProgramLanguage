@@ -1,0 +1,42 @@
+<html>  
+    <head>  
+      <title>Login page</title>  
+  
+        <script language="javascript" >  
+        function calltoqt()  
+        {  
+          var nameArray;  
+          nameArray = document.getElementsByName("username");  
+          var pwdArray;  
+          pwdArray = document.getElementsByName("userpwd");  
+          //alert("=======4======="+pwdArray[0].value+"/"+nameArray[0].value);  
+          window.mywebkit.onCall(nameArray[0].value,pwdArray[0].value);  
+  
+        }  
+  
+        function callfromqt(name,pwd)  
+        {  
+            var nameArray;  
+            nameArray = document.getElementsByName("username");  
+            var pwdArray;  
+            pwdArray = document.getElementsByName("userpwd");  
+            nameArray[0].value = name;  
+            pwdArray[0].value = pwd;  
+        }  
+  
+      </script>  
+  
+    </head>  
+    <body>  
+        <p align="center">Name:  
+        <input type="text" name="username" />  
+        </p>  
+  
+        <p align="center">Pswd:  
+        <input type="password" name="userpwd"  />  
+        </p>  
+        <p align="center" >  
+        <input type="button" value="Submit" onclick="calltoqt()" />  
+        </p>  
+    </body>  
+  </html>  
