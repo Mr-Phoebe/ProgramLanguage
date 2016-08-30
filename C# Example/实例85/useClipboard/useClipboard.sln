@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "useClipboard", "useClipboard.csproj", "{DB7471D5-4F5F-47A4-949F-CA5B8F498729}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{DB7471D5-4F5F-47A4-949F-CA5B8F498729}.Debug.ActiveCfg = Debug|.NET
+		{DB7471D5-4F5F-47A4-949F-CA5B8F498729}.Debug.Build.0 = Debug|.NET
+		{DB7471D5-4F5F-47A4-949F-CA5B8F498729}.Release.ActiveCfg = Release|.NET
+		{DB7471D5-4F5F-47A4-949F-CA5B8F498729}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

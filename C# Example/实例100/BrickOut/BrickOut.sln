@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrickOut", "BrickOut.csproj", "{50B4FF11-2C66-4CEF-A89D-D2A06C31F378}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{50B4FF11-2C66-4CEF-A89D-D2A06C31F378}.Debug.ActiveCfg = Debug|.NET
+		{50B4FF11-2C66-4CEF-A89D-D2A06C31F378}.Debug.Build.0 = Debug|.NET
+		{50B4FF11-2C66-4CEF-A89D-D2A06C31F378}.Release.ActiveCfg = Release|.NET
+		{50B4FF11-2C66-4CEF-A89D-D2A06C31F378}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

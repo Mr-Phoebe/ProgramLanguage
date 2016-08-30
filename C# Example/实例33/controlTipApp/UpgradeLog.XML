@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="controlTipApp">
+</Property><Property Name="解决方案文件" Value="C:\Users\cheng.guo\Desktop\C#100个编程实例程序\实例33\controlTipApp\controlTipApp.sln">
+</Property><Property Name="Date" Value="2012年3月6日">
+</Property><Property Name="Time" Value="14:05">
+</Property></Properties><Event ErrorLevel="0" Project="controlTipApp" Source="controlTipApp.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="controlTipApp" Source="controlTipApp.csproj" Description="Converted">
+</Event><Event ErrorLevel="2" Project="" Source="controlTipApp.sln" Description="无法转换解决方案文件“C:\Users\cheng.guo\Desktop\C#100个编程实例程序\实例33\controlTipApp\controlTipApp.sln”，因为无法修改它。若要转换此解决方案，请将此解决方案文件的权限更改为允许修改，然后重新打开它。">
+</Event><Event ErrorLevel="3" Project="" Source="controlTipApp.sln" Description="未转换">
+</Event></UpgradeLog>

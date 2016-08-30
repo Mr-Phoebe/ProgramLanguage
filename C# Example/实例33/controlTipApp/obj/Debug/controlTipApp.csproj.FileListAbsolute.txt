@@ -1,0 +1,7 @@
+C:\Users\cheng.guo\Desktop\C#100个编程实例程序\实例33\controlTipApp\obj\Debug\controlTipApp.exe
+C:\Users\cheng.guo\Desktop\C#100个编程实例程序\实例33\controlTipApp\obj\Debug\controlTipApp.pdb
+C:\Users\cheng.guo\Desktop\C#100个编程实例程序\实例33\controlTipApp\bin\Debug\controlTipApp.exe
+C:\Users\cheng.guo\Desktop\C#100个编程实例程序\实例33\controlTipApp\bin\Debug\controlTipApp.pdb
+C:\Users\cheng.guo\Desktop\C#100个编程实例程序\实例33\controlTipApp\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\cheng.guo\Desktop\C#100个编程实例程序\实例33\controlTipApp\obj\Debug\controlTipApp.Form1.resources
+C:\Users\cheng.guo\Desktop\C#100个编程实例程序\实例33\controlTipApp\obj\Debug\controlTipApp.csproj.GenerateResource.Cache

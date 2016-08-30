@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "checklistBoxApp", "checklistBoxApp.csproj", "{2DF72A09-C26B-4B2F-B870-178C21A4F1DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{2DF72A09-C26B-4B2F-B870-178C21A4F1DB}.Debug.ActiveCfg = Debug|.NET
+		{2DF72A09-C26B-4B2F-B870-178C21A4F1DB}.Debug.Build.0 = Debug|.NET
+		{2DF72A09-C26B-4B2F-B870-178C21A4F1DB}.Release.ActiveCfg = Release|.NET
+		{2DF72A09-C26B-4B2F-B870-178C21A4F1DB}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

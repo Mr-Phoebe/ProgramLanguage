@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ratation", "Ratation.csproj", "{6B9D7A0F-44F6-4AE3-86BD-14EFC673AB4B}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{6B9D7A0F-44F6-4AE3-86BD-14EFC673AB4B}.Debug.ActiveCfg = Debug|.NET
+		{6B9D7A0F-44F6-4AE3-86BD-14EFC673AB4B}.Debug.Build.0 = Debug|.NET
+		{6B9D7A0F-44F6-4AE3-86BD-14EFC673AB4B}.Release.ActiveCfg = Release|.NET
+		{6B9D7A0F-44F6-4AE3-86BD-14EFC673AB4B}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

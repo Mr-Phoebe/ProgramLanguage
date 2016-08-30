@@ -1,0 +1,13 @@
+Windows Registry Editor Version 5.00 
+
+[HKEY_CURRENT_USER\Software\公司名\软件名] 
+
+"config"="缺省设置" 
+
+"user"="用户某某某" 
+
+"passwd"="d7d3i0k2h785ss" 
+
+"Server"="mydbserver" 
+
+"IP"="220.56.14.8" 

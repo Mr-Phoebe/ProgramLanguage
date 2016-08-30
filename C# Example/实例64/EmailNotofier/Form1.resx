@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" targetNamespace="" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <data name="notifyIcon1.Icon" mimetype="text/microsoft-urt/binary-serialized/base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFRTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0xLjAuMjQxMS4wLCBD
+        dWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABNTeXN0ZW0u
+        RHJhd2luZy5JY29uAgAAAAhJY29uRGF0YQhJY29uU2l6ZQcEAhNTeXN0ZW0uRHJhd2luZy5TaXplAgAA
+        AAIAAAAJAwAAAAX/////E1N5c3RlbS5EcmF3aW5nLlNpemUCAAAABXdpZHRoBmhlaWdodAAACAgCAAAA
+        IAAAACAAAAAPAwAAAP4CAAACAAABAAEAICAQAAAAAADoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAA
+        gAIAAAAAAAAAAAAAAAAAAAAAAAAxAj0AkZGSAI0KrAChYK4A1dLWAPJM/AC7D+EA+JH5AHZ0dwBbA3YA
+        /f39AOyw8ACxsbEA92n5ANYt9gBrK3kAqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
+        qqqqRMzMxKqqqqqqqqqqqqqqTBEcwREUqqqqqqqqqqqqTIjMM7qkxKqqqqqqqqqqpBj5bX3WYqqqqqqq
+        qqqqqkEAW6qqqqe6qqqqqqqqqqoQm0qqqqqqqqqqqqqqqqqkCXuqTMRKTByqqqqqqqqqoAd6oYiIHIgR
+        FKqqqqqqqkBlykiIxIj/FBFKqqqqqqoAfUoABWkQl+lIyqqqqqqqAlNKAFdGAOgWnISqqqqqpAbooA7o
+        SQnoGuKMqqqqqq8O6EAF6EqWaIomEaqqqqqgBWhAnejKkm6EpjhKqqqqqQXoSZVoGplmhKkoSqqqqqAO
+        aBmeY4SZ5oyp6EqqqqqplmgblmKMmeKBr1hKqqqqq5ZmjJLiiMlmOKNYSqqqqqqSYoEiYvgQZmhPWKqq
+        qqqqmVKIQiWRgG5hoNyqqqqqqjliKBou6QbnWqDUqqqqqqqpLpiBrld3VXqi2qqqqqqqpy6ZiMqqqqqq
+        NUqqqqqqqqqSYpiBSqqqrAeqqqqqqqqqom4viIHETBnaqqqqqqqqqqomWZzBERH2uqqqqqqqqqqqquXp
+        mqqyW6qqqqqqqqqqqqqqXd5u26qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqoAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAs=
+</value>
+  </data>
+  <data name="$this.Name">
+    <value>Form1</value>
+  </data>
+  <resheader name="ResMimeType">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="Version">
+    <value>1.0.0.0</value>
+  </resheader>
+  <resheader name="Reader">
+    <value>System.Resources.ResXResourceReader</value>
+  </resheader>
+  <resheader name="Writer">
+    <value>System.Resources.ResXResourceWriter</value>
+  </resheader>
+</root>

@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimatBall", "AnimatBall.csproj", "{E4BB467F-21DC-436C-A9E9-736B70284F11}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{E4BB467F-21DC-436C-A9E9-736B70284F11}.Debug.ActiveCfg = Debug|.NET
+		{E4BB467F-21DC-436C-A9E9-736B70284F11}.Debug.Build.0 = Debug|.NET
+		{E4BB467F-21DC-436C-A9E9-736B70284F11}.Release.ActiveCfg = Release|.NET
+		{E4BB467F-21DC-436C-A9E9-736B70284F11}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

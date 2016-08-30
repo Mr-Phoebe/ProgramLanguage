@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatClient", "ChatClient.csproj", "{A4E944F2-E298-4D6D-9276-6A1891036128}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{A4E944F2-E298-4D6D-9276-6A1891036128}.Debug.ActiveCfg = Debug|.NET
+		{A4E944F2-E298-4D6D-9276-6A1891036128}.Debug.Build.0 = Debug|.NET
+		{A4E944F2-E298-4D6D-9276-6A1891036128}.Release.ActiveCfg = Release|.NET
+		{A4E944F2-E298-4D6D-9276-6A1891036128}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

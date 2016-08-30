@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "noBorderApp", "noBorderApp.csproj", "{03527DFC-8360-41FD-BCB5-8D7B54C004D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{03527DFC-8360-41FD-BCB5-8D7B54C004D3}.Debug.ActiveCfg = Debug|.NET
+		{03527DFC-8360-41FD-BCB5-8D7B54C004D3}.Debug.Build.0 = Debug|.NET
+		{03527DFC-8360-41FD-BCB5-8D7B54C004D3}.Release.ActiveCfg = Release|.NET
+		{03527DFC-8360-41FD-BCB5-8D7B54C004D3}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

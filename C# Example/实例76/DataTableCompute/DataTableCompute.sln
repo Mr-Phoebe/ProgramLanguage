@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTableCompute", "DataTableCompute.csproj", "{365F73D2-316D-42E2-96F6-438A3357656E}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{365F73D2-316D-42E2-96F6-438A3357656E}.Debug.ActiveCfg = Debug|.NET
+		{365F73D2-316D-42E2-96F6-438A3357656E}.Debug.Build.0 = Debug|.NET
+		{365F73D2-316D-42E2-96F6-438A3357656E}.Release.ActiveCfg = Release|.NET
+		{365F73D2-316D-42E2-96F6-438A3357656E}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

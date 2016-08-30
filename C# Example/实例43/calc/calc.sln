@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calc", "calc.csproj", "{152F33F6-8C8A-4C23-B7D1-5D205E967CA3}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{152F33F6-8C8A-4C23-B7D1-5D205E967CA3}.Debug.ActiveCfg = Debug|.NET
+		{152F33F6-8C8A-4C23-B7D1-5D205E967CA3}.Debug.Build.0 = Debug|.NET
+		{152F33F6-8C8A-4C23-B7D1-5D205E967CA3}.Release.ActiveCfg = Release|.NET
+		{152F33F6-8C8A-4C23-B7D1-5D205E967CA3}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

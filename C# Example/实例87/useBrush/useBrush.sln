@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "useBrush", "useBrush.csproj", "{7C4F92F0-78D8-439A-B676-D6BE36B1786F}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{7C4F92F0-78D8-439A-B676-D6BE36B1786F}.Debug.ActiveCfg = Debug|.NET
+		{7C4F92F0-78D8-439A-B676-D6BE36B1786F}.Debug.Build.0 = Debug|.NET
+		{7C4F92F0-78D8-439A-B676-D6BE36B1786F}.Release.ActiveCfg = Release|.NET
+		{7C4F92F0-78D8-439A-B676-D6BE36B1786F}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,17 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB9-8B4A-11D0-8D11-00A0C91BC942}") = "listArg0.exe", "listArg0.exe", "{6D9A0BF8-E147-4C43-A732-0B48E73139C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{6D9A0BF8-E147-4C43-A732-0B48E73139C0}.Debug.ActiveCfg = Debug
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

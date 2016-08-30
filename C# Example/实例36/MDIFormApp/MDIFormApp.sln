@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDIFormApp", "MDIFormApp.csproj", "{7ECBCEC2-D9E7-4D0E-84A1-C25964E0DFDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{7ECBCEC2-D9E7-4D0E-84A1-C25964E0DFDB}.Debug.ActiveCfg = Debug|.NET
+		{7ECBCEC2-D9E7-4D0E-84A1-C25964E0DFDB}.Debug.Build.0 = Debug|.NET
+		{7ECBCEC2-D9E7-4D0E-84A1-C25964E0DFDB}.Release.ActiveCfg = Release|.NET
+		{7ECBCEC2-D9E7-4D0E-84A1-C25964E0DFDB}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

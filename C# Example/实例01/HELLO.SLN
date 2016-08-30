@@ -1,0 +1,17 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB9-8B4A-11D0-8D11-00A0C91BC942}") = "hello.exe", "hello.exe", "{450B85FC-8DBB-4AE5-AFC2-4215A7CA5D0A}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{450B85FC-8DBB-4AE5-AFC2-4215A7CA5D0A}.Debug.ActiveCfg = Debug
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
