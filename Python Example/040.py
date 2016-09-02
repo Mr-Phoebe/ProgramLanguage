@@ -12,6 +12,9 @@ if __name__ == '__main__':
     # 方法一
     print a[::-1]
     # 方法二
+    a.reverse()
+    print a
+    # 方法三
     for i in range(len(a) / 2):
         a[i],a[N - i - 1] = a[N - i - 1],a[i]
     print a
