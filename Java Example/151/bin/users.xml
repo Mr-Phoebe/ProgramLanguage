@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connection>
+	<user>
+		<className>net.sourceforge.jtds.jdbc.Driver</className>
+		<url>jdbc:jtds:sqlserver://localhost:1433;DatabaseName=db_database19</url>
+		<userName>sa</userName>
+		<passWord>111</passWord>
+	</user>	
+</connection>
