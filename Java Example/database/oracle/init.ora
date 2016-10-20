@@ -1,0 +1,62 @@
+##############################################################################
+# Copyright (c) 1991, 2001, 2002 by Oracle Corporation
+##############################################################################
+ 
+###########################################
+# Shared Server
+###########################################
+dispatchers="(PROTOCOL=TCP) (SERVICE=orcl17XDB)"
+ 
+###########################################
+# Miscellaneous
+###########################################
+compatible=11.2.0.0.0
+diagnostic_dest=E:\app\Administrator
+memory_target=854589440
+ 
+###########################################
+# Security and Auditing
+###########################################
+audit_file_dest=E:\app\Administrator\admin\orcl17\adump
+audit_trail=db
+remote_login_passwordfile=EXCLUSIVE
+ 
+###########################################
+# Database Identification
+###########################################
+db_domain=""
+db_name=orcl17
+ 
+###########################################
+# File Configuration
+###########################################
+control_files=("E:\app\Administrator\oradata\orcl17\control01.ctl", "E:\app\Administrator\flash_recovery_area\orcl17\control02.ctl")
+db_recovery_file_dest=E:\app\Administrator\flash_recovery_area
+db_recovery_file_dest_size=4039114752
+ 
+###########################################
+# Cursors and Library Cache
+###########################################
+open_cursors=300
+ 
+###########################################
+# System Managed Undo and Rollback Segments
+###########################################
+undo_tablespace=UNDOTBS1
+ 
+###########################################
+# Network Registration
+###########################################
+#local_listener=LISTENER_ORCL17
+ 
+###########################################
+# Processes and Sessions
+###########################################
+processes=150
+ 
+###########################################
+# Cache and I/O
+###########################################
+db_block_size=8192
+ 
+ 
