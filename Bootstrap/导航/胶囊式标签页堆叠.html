@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>index</title>
+    <link rel="stylesheet" type="text/css" href="../bs/css/bootstrap.css">
+    <script src="../bs/js/jquery-3.1.1.min.js"></script>
+    <script src="../bs/js/bootstrap.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <style>
+    * {
+        font-family: 微软雅黑;
+    }
+    
+    .navs {
+        padding: 15px 15px;
+        display: none;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="page-header">Bootstrap</h1>
+        <div class="row">
+            <div class="col-md-2">
+                <ul class="nav nav-pills nav-stacked" role="tablist">
+                    <li role="presentation" class="active"><a href="#">Linux</a></li>
+                    <li role="presentation" class=""><a href="#">PHP</a></li>
+                    <li role="presentation" class=""><a href="#">Python</a></li>
+                </ul>
+            </div>
+            <div class="col-md-10">
+                <div class="row navs">
+                    <p class="lead">Linux is very much!</p>
+                </div>
+                <div class="row navs">
+                    <p class="lead">PHP is very much!</p>
+                </div>
+                <div class="row navs">
+                    <p class="lead">Python is very much!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+$('li').mouseenter(function() {
+    $(this).addClass('active');
+    $('li').not($(this)).removeClass('active')
+
+    idx = $(this).index('li');
+    $('.navs').eq(idx).show(50)
+    $('.navs').not($('.navs').eq(idx)).hide();
+});
+
+$('.navs').eq(0).show(50);
+</script>
+
+</html>

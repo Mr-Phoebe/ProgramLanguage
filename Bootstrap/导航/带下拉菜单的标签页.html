@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>index</title>
+    <link rel="stylesheet" type="text/css" href="../bs/css/bootstrap.css">
+    <script src="../bs/js/jquery-3.1.1.min.js"></script>
+    <script src="../bs/js/bootstrap.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <style>
+    * {
+        font-family: 微软雅黑;
+    }
+    .row{
+        padding:15px 15px;
+        display: none;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="page-header">Bootstrap</h1>
+        <ul class="nav nav-tabs nav-justified" role="tablist">
+            <li role="presentation" class="active"><a href="#">Linux</a></li>
+            <li role="presentation" class=""><a href="#">PHP</a></li>
+            <li role="presentation" class=""><a href="#">Python</a></li>
+            <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu" role='menu'>
+                    <li><a href="#">Dropdown is very much!</a></li>
+
+                </ul>
+            </li>
+        </ul>
+
+        <div class="row">
+            <p class="lead">Linux is very much!</p>
+        </div>
+        <div class="row">
+            <p class="lead">PHP is very much!</p>
+        </div>
+        <div class="row">
+            <p class="lead">Python is very much!</p>
+        </div>
+        <div class="row">
+            <p class="lead">Dropdown is very much!</p>
+        </div>
+    </div>
+</body>
+<script>
+$('li').mouseenter(function(){
+    $(this).addClass('active');
+    $('li').not($(this)).removeClass('active')
+
+    idx=$(this).index('li');
+    $('.row').eq(idx).stop().show(50)
+    $('.row').not($('.row').eq(idx)).stop().hide();
+});
+
+$('.row').eq(0).show(50);
+</script>
+
+</html>
