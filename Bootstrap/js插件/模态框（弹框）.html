@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>index</title>
+    <link rel="stylesheet" type="text/css" href="../bs/css/bootstrap.css">
+    <script src="../bs/js/jquery-3.1.1.min.js"></script>
+    <script src="../bs/js/bootstrap.js"></script>
+    <script src="../bs/js/holder.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <style>
+    * {
+        font-family: 微软雅黑;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="page-header">Bootstrap</h1>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+            Launch demo modal
+        </button>
+        <!-- Modal -->
+        <!-- modal-lg -->
+        <!-- modal-sm -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h4>This is modal body.</h4>
+                        <p>This is modal body.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <p> This is modal footer.z</p>
+                        <button type="button" class="btn btn-primary save">Save changes</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+$('.save').click(function(){
+    alert('Login Success!')
+
+    // hide the modal
+    $('#myModal').modal('hide')
+});
+
+// You can use JS to show the modal
+
+// event
+
+$('#myModal').on('shown.bs.modal', function (e) {
+    $('body').css({'background':'#aaf'});
+});
+
+
+$('#myModal').on('hidden.bs.modal', function (e) {
+    $('body').css({'background':'#faa'});
+});
+
+
+
+</script>
+
+</html>
