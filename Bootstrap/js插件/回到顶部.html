@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>index</title>
+    <link rel="stylesheet" type="text/css" href="../bs/css/bootstrap.css">
+    <script src="../bs/js/jquery-3.1.1.min.js"></script>
+    <script src="../bs/js/bootstrap.js"></script>
+    <script src="../bs/js/docs.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <style>
+    * {
+        font-family: 微软雅黑;
+    }
+    
+    .list-group {
+        position: fixed;
+    }
+    
+    .top {
+        cursor: pointer;
+        display: none;
+        width: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="page-header">Bootstrap</h1>
+        <div class="row">
+            <div class="col-md-10">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <h1>TEST</h1>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <h2>aaaaaaaaaaaaaaaaaaaaaaaa</h2>
+                        <h2>aaaaaaa</h2>
+                        <h2>aaaaaaa</h2>
+                        <h2>aaaaaaa</h2>
+                        <h2>aaaaaaa</h2>
+                        <h2>aaaaaaa</h2>
+                        <h2>aaaaaaa</h2>
+                        <h2>aaaaaaa</h2>
+                        <h2>aaaaaaa</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <!-- <div class="list-group" data-spy="affix"> -->
+                <div class="list-group">
+                    <a href="#" class="list-group-item active top"><span class="glyphicon glyphicon-menu-up"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+$(window).scroll(function(){
+    $('.top').show();
+    if($(window).scrollTop() <= 150){
+        $('.top').hide()
+    }
+});
+
+$('.top').click(function(){
+    $(window).scrollTop(0)
+});
+</script>
+
+</html>
