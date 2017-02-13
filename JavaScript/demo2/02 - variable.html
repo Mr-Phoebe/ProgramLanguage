@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Index</title>
+        <script src="./module/docs.min.js"></script>
+        <script src="./module/jquery-3.1.1.min.js"></script>
+    </head>
+    <body>
+        <div class="img">
+            <img src="holder.js/100x100" id="dogid">
+            <img src="holder.js/100x100" id="catid">
+        </div>
+    </body>
+
+<script>
+// str
+username = 'Terry';
+document.write("<h1>"+username+"</h1>");
+// int
+username = 100;
+
+document.write('<h1>')
+document.write(username-'10'); // Type conversion
+document.write('</h1>')
+document.write('<br>');
+
+document.write(username+10);
+document.write('<br>');
+// float
+username = 100.0;
+document.write(username+0.1);
+document.write('<br>');
+// bool
+num = 67;
+if (num>=60) {
+    document.write('pass');
+    document.write('<br>');
+}
+else {
+    document.write('fail');
+    document.write('<br>');
+}
+// array
+people = new Array('Terry','Tom','Jerry');
+document.write(people)
+document.write('<br>');
+
+ps = [1,2,3];
+document.write(ps);
+document.write('<br>');
+
+// object
+obj = new Object()
+obj.username = 'Terry'
+obj.age = '2'
+obj.sex = 'male'
+obj.say = function(){
+    alert('my name is ' + this.username);
+}
+document.write('<h1>my name is ' + obj.username + '</h1>')
+obj.say();
+
+//json
+var obj = {
+    username:'Terry',
+    age:2
+}
+document.write('<h1>my age is ' + obj.age + '</h1>')
+</script>
+</html> 

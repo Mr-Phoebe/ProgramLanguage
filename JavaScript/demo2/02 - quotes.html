@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <input value="外双引号内双引号-wrong" type="button" onclick="alert(" OK ");" />
+    <br />
+    <input value="外单引号内单引号-wrong" type="button" onclick='alert(' OK ');' />
+    <br />
+    <input value="两个双引号-wrong" type="button" onclick="alert(" "OK" ");" />
+    <br />
+    <input value="两个单引号-wrong" type="button" onclick="alert(''OK'');" />
+    <br />
+    <input value="\+双引号-wrong" type="button" onclick="alert(\" OK\ ");" />
+    <br />
+    <input value="\+单引号-wrong" type="button" onclick="alert(\'OK\');" />
+    <br />
+    <input value="外双引号内单引号-OK" type="button" onclick="alert('OK');" />
+    <br />
+    <input value="外单引号内双引号-OK" type="button" onclick='alert("OK");' />
+    <br />
+    <input value="外部不使用引号-OK" type="button" onclick=alert( 'OK');alert( "OK"); />
+    <br />
+    <input value="HTML转义字符" (& # 3 4 ;)-OK " type="button " onclick="alert( "OK"); " />
+    <br />
+    <input value="HTML转义字符 '(& # 3 9 ;)-OK" type="button" onclick="alert('OK ');" />
+    <br />
+    <input value="HTML转义字符"(& # x 2 2 ;)-OK" type="button" onclick="alert('OK ');" />
+    <br />
+    <input value="HTML转义字符'(& # x 2 7 ;)-OK " type="button " onclick="alert( 'OK'); " />
+    <br />
+    <input value="HTML转义字符 "(& q u o t ;)-OK" type="button" onclick="alert(" OK ");" />
+    <br />
+    <input value="HTML转义字符'(& a p o s ;)-IEwrong" type="button" onclick="alert('OK');" />
+    <br />
+    <input value="其它\\-wrong" type="button" onclick="alert(\\" OK\\ ");" />
+    <br />
+    <input value="其它\& # 3 4 ;-wrong" type="button" onclick="alert(\" OK\ ");" />
+    <br />
+</body>
+
+</html>
