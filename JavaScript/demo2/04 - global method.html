@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Index</title>
+        <script src="./module/docs.min.js"></script>
+        <script src="./module/jquery-3.1.1.min.js"></script>
+    </head>
+    <body>
+        <div class="img">
+            <img src="holder.js/100x100" id="dogid">
+            <img src="holder.js/100x100" id="catid">
+        </div>
+    </body>
+
+<script>
+// check array
+
+arr = [1,2,3]
+document.write(arr instanceof Array)
+document.write('<br>')
+
+obj = {}
+document.write(obj instanceof Array)
+document.write('<br>')
+
+// change into number
+
+str = '10px'
+document.write(parseInt(str)+5)
+document.write('<br>')
+str = '10.1px'
+document.write(parseFloat(str)+5)
+document.write('<br>')
+str = '10.1'
+document.write(Number(str)+5)
+document.write('<br>')
+
+// change into string
+num = 10
+document.write(String(num)+" is ten")
+document.write('<br>')
+
+/* 
+ eval() is used to calculate
+the value of a string expression
+*/
+
+b = 'a=1+1'
+eval(b)
+document.write(a)
+document.write('<br>')
+
+
+</script>
+</html>

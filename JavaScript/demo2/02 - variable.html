@@ -63,9 +63,22 @@ obj.say();
 
 //json
 var obj = {
-    username:'Terry',
-    age:2
+    'username':'Terry',
+    age:2,
+    'say':function(){
+        alert(1);
+    }
 }
-document.write('<h1>my age is ' + obj.age + '</h1>')
+document.write('<h1>my age is ' + obj.age + '</h1>');
+obj.say();
+
+//NaN
+str = 'abc';
+num = str - 5;
+alert(num);
+//NULL
+str = null;
+//undefined
+miaomiao.say();
 </script>
 </html> 
