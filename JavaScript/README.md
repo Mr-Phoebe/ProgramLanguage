@@ -21,3 +21,4 @@ of any kind.
 Demo2
 ---
 These are examples writen by myself.  
+And these code is for front-end development.  
