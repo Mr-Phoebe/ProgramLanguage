@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Index</title>
+        <script src="./module/docs.min.js"></script>
+        <script src="./module/jquery-3.1.1.min.js"></script>
+    </head>
+    <body>
+        <div class="img">
+            <img src="holder.js/100x100" id="dogid">
+            <img src="holder.js/100x100" id="catid">
+        </div>
+    </body>
+
+<script>
+// There is some parts in the global methods.html
+
+
+/*
+change into boolean
+NaN -> false
+undefined -> false
+null -> false
+'' -> false
+0 -> false
+0.0 -> false
+*/
+
+num = 10
+zero = 0
+document.write(Boolean(num)+" is True")
+document.write('<br>')
+document.write(Boolean(zero)+" is False")
+document.write('<br>')
+document.write(!!zero)
+document.write('<br>')
+
+
+//json string to json object
+// which is widely used with PHP
+v = "{'username':'Terry','age':'80'}"
+obj = eval('('+v+')')
+document.write(obj.username)
+document.write('<br>')
+
+</script>
+</html>
