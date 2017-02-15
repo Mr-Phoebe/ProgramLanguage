@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Index</title>
+        <script src="./module/docs.min.js"></script>
+        <script src="./module/jquery-3.1.1.min.js"></script>
+    </head>
+    <body>
+        <div class="img">
+            <img src="holder.js/100x100" id="dogid">
+            <img src="holder.js/100x100" id="catid">
+        </div>
+    </body>
+
+<script>
+
+cnt = 0
+
+while(cnt <= 5){
+    document.write('<h1>' + cnt + '</h1>')
+    // cnt = cnt + 1
+    // cnt += 1
+    cnt++
+}
+
+for (var i = 5 ; i >= 0; i--) {
+    document.write('<h3>' + i + '</h3>')
+}
+
+arr = [1,2,3,4]
+
+for(item in arr){
+    document.write('<h5>' + item + '</h5>')
+}
+
+obj = {'username':'Terry','age':'20'}
+for(i in obj){
+    document.write('<h1>' + i + '->' + obj[i] + '</h1>')
+}
+
+</script>
+</html>
