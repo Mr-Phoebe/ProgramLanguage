@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    .clock{
+        width: 200px;
+        height: 50px;
+        background: #000;
+        color: #0f0;
+        font-weight: bold;
+        border-radius: 50px;
+        text-align: center; 
+        line-height: 50px;
+        font-size: 30px;    
+    }
+</style>
+    <head>
+        <meta charset="utf-8">
+        <title>Index</title>
+        <script src="./module/docs.min.js"></script>
+        <script src="./module/jquery-3.1.1.min.js"></script>
+    </head>
+    <body>
+        <h1><a href="https://www.w3schools.com/js/js_dates.asp">Javascript Date</a></h1>
+        <div class="clock">
+            <span id='tid'>10:00:20</span>
+        </div>
+    </body>
+
+<script>
+/*
+More examples and methods can be found in the link.
+
+generate a object:
+dobj = new Date()
+
+methods:
+getFullYear()
+getMonth()
+getHours()
+*/
+
+dobj = new Date()
+year = dobj.getFullYear()
+month = dobj.getMonth() + 1 // Months are counted from 0
+day = dobj.getDate()
+hour = dobj.getHours()
+minute = dobj.getMinutes()
+second = dobj.getSeconds()
+
+function gettime(){
+    dobj = new Date()
+    hour = dobj.getHours()
+    minute = dobj.getMinutes()
+    second = dobj.getSeconds()
+
+    str = ""
+    if(hour<10){
+        str += '0' + hour + ':'
+    }
+    else{
+        str += hour + ':'
+    }
+    if(minute<10){
+        str += '0' + minute + ':'
+    }
+    else{
+        str += minute + ':'
+    }
+    if(second<10){
+        str += '0' + second
+    }
+    else{
+        str += second
+    }
+
+    tidobj = document.getElementById('tid')
+    tidobj.innerHTML=str;
+
+}
+
+gettime();
+
+setInterval(function(){
+    gettime();
+
+})
+
+
+
+</script>
+</html>

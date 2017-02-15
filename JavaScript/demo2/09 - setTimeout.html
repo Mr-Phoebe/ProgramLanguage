@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    .clock{
+        width: 50%;
+        height: 50px;
+        background: #000;
+        color: #0f0;
+        font-weight: bold;
+        border-radius: 50px;
+        text-align: center; 
+        position: absolute;
+        left: 25%;
+        line-height: 50px;
+        font-size: 15px;    
+    }
+</style>
+    <head>
+        <meta charset="utf-8">
+        <title>Index</title>
+        <script src="./module/docs.min.js"></script>
+        <script src="./module/jquery-3.1.1.min.js"></script>
+    </head>
+    <body>
+        <div class="clock">
+            <span>提交成功，<span id='tid'>6</span> 秒后即将跳转到Github</span>
+        </div>
+        <button id='bid'>立即停止</button>
+    </body>
+
+<script>
+
+//setTimeout(function, time)
+//clearTimeout(s1)
+
+tobj = setTimeout(function(){
+    location='https://github.com/Mr-Phoebe'
+}, 6000)
+
+bidobj = document.getElementById('bid')
+bidobj.onclick(function(){
+    clearTimeout(tobj)
+})
+
+/*
+
+use setInterval() 
+
+tidobj = document.getElementById('tid')
+t = 6
+
+sobj = setInterval(function(){
+    if (t == 0) {
+        clearInterval(sobj) // change the location
+        location='https://github.com/Mr-Phoebe'
+    }
+    tidobj.innerHTML=--t
+}, 1000)
+
+*/
+</script>
+</html>
