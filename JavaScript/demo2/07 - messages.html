@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Index</title>
+        <script src="./module/docs.min.js"></script>
+        <script src="./module/jquery-3.1.1.min.js"></script>
+    </head>
+    <body>
+        <a href="https://github.com/Mr-Phoebe" id="aid">Github</a>
+        
+    </body>
+
+<script>
+// Use the return numbers to judge the condition
+aobj = document.getElementById('aid')
+aobj.onclick=function(){
+    r = confirm('Are you sure to go to Github?')
+    if(!r){
+        return false
+    }    
+}
+
+info = prompt('Info')
+
+alert(info)
+
+</script>
+</html>
