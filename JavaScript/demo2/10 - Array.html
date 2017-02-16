@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Index</title>
+        <script src="./module/docs.min.js"></script>
+        <script src="./module/jquery-3.1.1.min.js"></script>
+    </head>
+    <body>
+        <div class="">
+            <span>More examples can be found in <a href="https://www.w3schools.com/js/js_arrays.asp">Javascript Array</a> and <a href="https://www.w3schools.com/js/js_array_methods.asp">Array methods</a>.</span>
+        </div>
+    </body>
+
+<script>
+
+arr = [1,2,3,4,5,6,7,8]
+
+val = arr.pop()
+document.write(val)
+document.write('<br>')
+
+arr.push(8)
+document.write(arr)
+document.write('<br>')
+
+str = arr.shift();      // pop from the beginning
+document.write(str)
+document.write('<br>')
+
+arr.unshift(1)
+document.write(arr)
+document.write('<br>')
+
+val = arr.slice(1, 4)       // slice won't change the original array
+document.write(val)
+document.write('<br>')
+val = arr.slice(-1)
+document.write(val)
+document.write('<br>')
+
+str = arr.join('-')
+document.write(str)
+document.write('<br>')
+
+arr2 = [10,9]
+
+arr3 = arr.concat(arr2)
+document.write(arr3)
+document.write('<br>')
+
+arr3.sort()     //lexicographic order
+document.write(arr3)
+document.write('<br>')
+
+arr3.sort(asc)
+
+//define a sort function
+function asc(i,j){
+    return i-j
+}
+document.write(arr3)
+document.write('<br>')
+
+arr3.sort(function(i,j){
+    return j-i;
+})
+document.write(arr3)
+document.write('<br>')
+
+arr2 = arr.splice(1,4) // splice will change the original arrary
+document.write(arr)
+document.write('<br>')
+document.write(arr2)
+document.write('<br>')
+</script>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Index</title>
+        <script src="./module/docs.min.js"></script>
+        <script src="./module/jquery-3.1.1.min.js"></script>
+    </head>
+    <body>
+    <div class="">
+        <span>More examples and methods can be found in <a href="https://www.w3schools.com/js/js_strings.asp">Javascript Strings</a> and <a href="https://www.w3schools.com/js/js_string_methods.asp">String methods</a>.</span>
+    </div>
+        
+    </body>
+
+<script>
+str = '/web/home/index.php'
+
+document.write(str.length)
+document.write('<br>')
+
+//methods
+document.write(str.indexOf('/'))
+document.write('<br>')
+document.write(str.lastIndexOf('/'))
+document.write('<br>')
+
+document.write(str.substr(1, 3))
+document.write('<br>')
+document.write(str.substr(1))
+document.write('<br>')
+
+arr = str.split('/')
+document.write(arr)
+document.write('<br>')
+
+document.write(str.search('web'))
+document.write('<br>')
+document.write(str.search(/h[A-Za-z]+$/g))
+document.write('<br>')
+
+arr = str.match(/p[A-Za-z]*/ig) //use reg
+document.write(arr)
+document.write('<br>')
+
+
+str2 = str.replace('h', 'H')
+document.write(str)
+document.write('<br>')
+document.write(str2)
+document.write('<br>')
+
+</script>
+</html>
