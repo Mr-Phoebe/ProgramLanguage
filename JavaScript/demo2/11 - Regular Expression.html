@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Index</title>
+        <script src="./module/docs.min.js"></script>
+        <script src="./module/jquery-3.1.1.min.js"></script>
+    </head>
+    <body>
+        <div class="">
+            <span>
+                More examples and information can be found in <a href="https://www.w3schools.com/js/js_regexp.asp">JavaScript Regular Expressions</a>.
+            </span>
+        </div>
+
+        <div class="">
+            <span>
+                更多信息请查看 <a href="http://w3school.com.cn/jsref/jsref_obj_regexp.asp">JavaScript RegExp</a>。
+            </span>
+        </div>
+    </body>
+
+<script>
+/*
+Modifier
+i   Perform case-insensitive matching
+g   Perform a global match (find all matches rather than stopping after the first match)
+m   Perform multiline matching
+*/
+
+str = 'linux and LInux phPis and 2 and 9 AnD p1p and p-p and p_p and PHP10 and p p and LinxX and Linax AND LInox and linx and phhp IS LAMP'
+
+arr = str.match(/linux/ig)
+document.write(arr)
+document.write('<br>')
+
+arr = str.match(/lin[ux]x/ig)
+document.write(arr)
+document.write('<br>')
+
+arr = str.match(/lin[^ux]x/ig)  // [] -> must match a character
+document.write(arr)
+document.write('<br>')
+
+arr = str.match(/p[a-z]p/ig) // [a-zA-Z] == [A-z]
+document.write(arr)
+document.write('<br>')
+
+arr = str.match(/p\wp/ig)
+document.write(arr)
+document.write('<br>')
+
+arr = str.match(/p.p/ig)
+document.write(arr)
+document.write('<br>')
+
+arr = str.match(/[0-9]/ig)
+document.write(arr)
+document.write('<br>')
+
+arr = str.match(/\d/ig)
+document.write(arr)
+document.write('<br>')
+
+arr = str.match(/\d|an\w/ig)
+document.write(arr)
+document.write('<br>')
+
+arr = str.match(/p.{1,3}p/ig)
+document.write(arr)
+document.write('<br>')
+
+arr = str.match(/p.p(?!is)/ig)
+document.write(arr)
+document.write('<br>')
+
+arr = str.match(/p.p(?=is)/ig)
+document.write(arr)
+document.write('<br>')
+</script>
+</html>
