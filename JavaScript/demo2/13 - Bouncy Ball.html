@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Index</title>
+        <script src="./module/docs.min.js"></script>
+        <script src="./module/jquery-3.1.1.min.js"></script>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+
+            #imgid{
+                width: 64px;
+                height: 64px;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+            }
+            #imgid img{
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="imgid">
+            <img src="./img/3.png" alt="" style="width: 64px;height: 64px;">
+        </div>
+    </body>
+
+<script>
+imgobj = document.getElementById('imgid')
+
+// document.body.style.background='#f00'        // how to get the valid height of the browser.
+// document.documentElement.style.background='#0f0'         // which part is the valid part of the browser
+screenHeight = document.documentElement.clientHeight
+imgHeight = 64
+diffHeight = screenHeight - imgHeight
+
+
+ys = 0
+yv = 1
+
+setInterval(function(){
+    ys+=yv
+    if(ys>=diffHeight){
+        ys = diffHeight
+        yv = -yv
+    }
+
+    if(ys<=0){
+        yv = -yv
+    }
+    imgobj.style.top = ys + 'px'
+},10)
+    
+
+</script>
+</html>
