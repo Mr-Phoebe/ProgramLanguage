@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Index</title>
+        <script src="./module/docs.min.js"></script>
+        <script src="./module/jquery-3.1.1.min.js"></script>
+        <style>
+            img{
+                position: absolute;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="img">
+            <img src="./img/1.png" id="dogid">
+        </div>
+    </body>
+
+<script>
+
+/*
+ key events
+    onkeydown
+    onkeyup
+    onkeypress
+*/
+
+xs = 0
+xv = 10
+ys = 0
+yv = 10
+
+dogidobj = document.getElementById('dogid')
+
+document.onkeydown = function(event){
+    kc = event.keyCode
+    document.title = kc
+
+    switch(kc){
+        case 37:
+            xs-=xv
+            dogidobj.style.left=xs+'px'
+            break;
+        case 38:
+            ys-=yv
+            dogidobj.style.top=ys+'px'
+            break;
+        case 39:
+            xs+=xv
+            dogidobj.style.left=xs+'px'
+            break;
+        case 40:
+            ys+=yv
+            dogidobj.style.top=ys+'px'
+            break;
+    }
+}
+
+
+</script>
+</html>
