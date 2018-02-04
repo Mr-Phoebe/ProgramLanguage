@@ -19,7 +19,7 @@ String one = strList.get(0);
 类型参数化(type parameterlization)
 ---
 
-scala中的泛型称为类型参数化(type parameterlization)。语法跟java不一样，使用`[]`表示类型。
+scala中的泛型称为**类型参数化(type parameterlization)**。语法跟java不一样，使用`[]`表示类型。
 
 ### 方法的泛型
 
@@ -81,7 +81,11 @@ val p2 = new Pair(1, "abc") //可以猜到的类型和泛型设定都被省略�
 泛型的上下界
 ---
 
-在定义泛型列表的时候可以使用`<:`和`>:`规定泛型元素的上下界：
+类型变量界定是指在泛型的基础上，对泛型的范围进行进一步的界定，从而缩下泛型的具体范围。
+
+在定义泛型的时候，用`<:`和`>:`规定泛型元素的上下界（在某些地方也会用这两个符号表示子类和父类），
+
+```
 
 ```scala
 class A
@@ -107,7 +111,58 @@ new T3[B]
 new T3[C]
 new T3[D]
 //new T3[E] 不能通过编译
+````
+这样做的作用有很多，比如，可以限定方法的实现
 
+下面的类是不能通过编译的，因为泛型T在编译的时候不能确定其具体类型，而并不是所有的类中都存在compareTo方法。
+
+```scala
+class TypeVariableBound {
+  def compare[T](first:T,second:T)={
+    if (first.compareTo(second)>0) 
+      first 
+    else 
+      second
+  }
+}
+
+object TypeVariableBound{
+  def main(args: Array[String]): Unit = {
+      val tvb=new TypeVariableBound
+      println(tvb.compare("A", "B")) 
+  }
+}
+```
+如果在使TypeVariableBound类编译通过，此时可以利用类型变量界定对泛型T进行界定，指明所有的泛型T都实现了Comparable接口，代码如下：
+
+
+```scala
+class TypeVariableBound {
+  //采用<:进行类型变量界定
+  //该语法的意思是泛型T必须是实现了Comparable
+  //接口的类型
+  def compare[T <: Comparable[T]](first:T,second:T)={
+    if (first.compareTo(second)>0) 
+      first 
+    else 
+      second
+  }
+}
+
+object TypeVariableBound{
+  def main(args: Array[String]): Unit = {
+      val tvb=new TypeVariableBound
+      //由于String类型实现了Comparable接口
+      //下面这种使用方式是合法的
+      println(tvb.compare("A", "B"))
+   }
+}
+```
+当然这只是其中一个应用而已。
+
+可以对比一下Java的语法
+
+```scala
 def upperBound[A <: Animal](list: ListBuffer[A]): Unit = { 
     list += new Animal("123")   // compile error
     val obj: AnyRef = list(0)   // ok
@@ -122,8 +177,6 @@ def lowerBound[A >: Animal](list: ListBuffer[A]): Unit = {
     val obj2: Animal = list(0)  // compile error
 }
 ```
-
-可以对比一下Java的使用
 
 ```Java
 public void upperBound(List<? extends Number> l) {
@@ -140,6 +193,43 @@ public static void lowerBound(List<? super Number> l) {
     Number num = l.get(0); // compile error
 }
 ```
+## 视图界定（View Bound)
+
+类型变量界定建立在类继承层次结构的基础上，但有时候这种限定不能满足实际要求。如果希望跨越类继承层次结构时，可以使用视图界定来实现的，其后面的原理是通过隐式转换来实现。视图界定利用`<%`符号来实现，在上一节中提到：
+
+
+```scala
+//使用的是类型变量界定
+case class Student[T,S <: Comparable[S]](var name:T,var height:S)
+object ViewBound extends App{
+
+  val s= Student("john","170")
+  //下面这条语句不合法，这是因为
+  //Int类型没有实现Comparable接口
+  val s2= Student("john",170)
+}
+```
+上面这个问题可以通过视图界定来解决，代码如下：
+
+
+```scala
+//利用<%符号对泛型S进行限定
+//它的意思是S可以是Comparable类继承层次结构
+//中实现了Comparable接口的类
+//也可以是能够经过隐式转换得到的类,该类实现了
+//Comparable接口
+case class Student[T,S <% Comparable[S]](var name:T,var height:S)
+
+
+object ViewBound extends App{
+  val s= Student("john","170")
+  //下面这条语句在视图界定中是合法的
+  val s2= Student("john",170)
+}
+```
+Int类型会隐式转换为RichInt类，而RichInt类属于Comparable继承层次结构
+
+![这里写图片描述](http://img.blog.csdn.net/20180204070118370?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMzAwNzkwMA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 协变和逆变
 ---
@@ -188,9 +278,33 @@ val c: C[Parent] = new C[Parent] // ok
 val c: C[Child] = new C[Parent]  // ok
 ```
 
+这两种变化其实就是表示可以从子类还是父类进行赋值或者类型转化。
+
+### 函数
+
+现在有两个函数类型
+
+```scala
+type A = Parent => Child
+type B = Child => Parent
+
+```
+
+所以A和B，哪个是父类，哪个是子类？
+
+A是子类，B是父类。
+
+对于一个函数类型，如果`A2 <: A1`且`B1 <: B2`，那么`A1 => B1 <: A2 => B2`。
+
 ### 协变逆变注意点
 
-逆变协变并不会被继承，父类声明为逆变或协变，子类如果想要保持，任需要声明：
+1. 通常来说，不是准确地定义
+
+协变类型参数一般作为函数的结果；
+逆变类型参数一般作为传入方法的参数；
+不变参类型参数可以在任意地方出现。
+
+2. 逆变协变并不会被继承，父类声明为逆变或协变，子类如果想要保持，任需要声明：
 
 ```scala
 trait A[+T]
