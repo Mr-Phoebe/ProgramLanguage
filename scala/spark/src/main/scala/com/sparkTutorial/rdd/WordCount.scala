@@ -11,7 +11,7 @@ object WordCount {
   def main(args: Array[String]) {
 
     Logger.getLogger("org").setLevel(Level.ERROR)
-    val conf = new SparkConf().setAppName("wordCounts").setMaster("local[3]")
+    val conf = new SparkConf().setAppName("wordCounts").setMaster("local[*]")
     val sc = new SparkContext(conf)
 
     val lines = sc.textFile("in/word_count.text")
