@@ -1,7 +1,12 @@
 Javascript
 ===
 
-Demo1
+Example1
+---
+These are examples writen by myself.  
+And these code is for front-end development.  
+
+Demo2
 ---
 These are examples from the book JavaScript: The Definitive Guide, 6th Edition.
 
@@ -18,7 +23,6 @@ Please note that the examples are not production code and have not been
 carefully testing. They are provided "as-is" and come with no warranty
 of any kind.
 
-Demo2
+NodeJS
 ---
-These are examples writen by myself.  
-And these code is for front-end development.  
+These codes are from [The Complete Node.js Developer Course (2nd Edition)](https://www.udemy.com/the-complete-nodejs-developer-course-2/learn/v4/overview).
