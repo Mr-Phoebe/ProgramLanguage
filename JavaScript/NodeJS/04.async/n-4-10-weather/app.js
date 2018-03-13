@@ -27,6 +27,8 @@
 
 const request = require('request');
 
+//  Dark Sky API
+
 request({
   url: 'https://api.forecast.io/forecast/4a04d1c42fd9d32c97a2c291a32d5e2d/39.9396284,-75.18663959999999',
   json: true
