@@ -1,0 +1,20 @@
+{
+  "name": "node-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha **/*.test.js",
+    "test-watch": "nodemon --exec 'npm test'"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "mocha": "^3.0.0",
+    "supertest": "^2.0.0"
+  },
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
